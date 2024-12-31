@@ -48,7 +48,7 @@ import java.util.Scanner;
         System.out.println(" ");
 
 //Morpion - Boucle + Test pour le nombre de tours
-while (ntour < 10) {
+while (ntour < 45) {
 
         /*Premier Joueur*/
 
@@ -225,6 +225,10 @@ while (ntour < 10) {
         break;
     }
 
+    //Ajoute un tour
+    ntour=ntour+5;
+
+    if (ntour==45){break;}
 
         /* Deuxième Joueur */
 
@@ -363,7 +367,8 @@ while (ntour < 10) {
     choix2 = 0;
 
     //Ajoute un tour
-    ntour++;
+    ntour = ntour+5;
+
 
         //Conditions de victoire Joueur 2
 
@@ -404,11 +409,12 @@ while (ntour < 10) {
         win = 2;
         break;
 
+
+
     }
 }
 
-//Message de Fin
-
+        //Message de Fin
         System.out.println(" ");
         System.out.println("---------------------------------------------------------");
         System.out.println("                                                         ");
