@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
-public class Main {
-    private static boolean test;
+    public class Main {
+
+
 
     public static void main(String[] args) {
 
+        //Reset des cases
         String c1 = " ";
         String c2 = " ";
         String c3 = " ";
@@ -15,122 +17,297 @@ public class Main {
         String c8 = " ";
         String c9 = " ";
 
+        //Création des variables de choix
+        int choix = 0;
+        int choix2 = 0;
+
+        //Création des variables de tests de fin
+        int intc1 = 0;
+        int intc2 = 0;
+        int intc3 = 0;
+        int intc4 = 0;
+        int intc5 = 0;
+        int intc6 = 0;
+        int intc7 = 0;
+        int intc8 = 0;
+        int intc9 = 0;
 
 
-        System.out.println("[ ][ ][ ]");
-        System.out.println("[ ][ ][ ]");
-        System.out.println("[ ][ ][ ]");
+
+        //Grille de départ
+        System.out.println("[1][2][3]");
+        System.out.println("[4][5][6]");
+        System.out.println("[7][8][9]");
 
         System.out.println(" ");
 
+while (intc1 != 0 && intc2 !=0 ) {
 
-        System.out.println("Premier Joueur :");
+    System.out.println("Premier Joueur :");
 
-        Scanner scanner = new Scanner(System.in);
-        int choix = scanner.nextInt();
+    Scanner scanner = new Scanner(System.in);
+    choix = scanner.nextInt();
 
-        if (choix == 1) {
-            if (c1 == (" ")) {
-                System.out.println(" ");
-                System.out.println("[X][ ][ ]");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][ ][ ]");
+    if (choix == 1) {
+        if (c1.equals(" ")) {
 
-                c1 = "X";
-            }
+            c1 = "X";
+            intc1 = 1;
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
-        if (choix == 2) {
-            if (c2 ==(" ")) {
-                System.out.println(" ");
-                System.out.println("[ ][X][ ]");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][ ][ ]");
+    if (choix == 2) {
+        if (c2.equals(" ")) {
 
-                c2 = "X";
-         }
+            c2 = "X";
+            intc2 = 1;
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
-        if (choix == 3) {
-            if (c3 ==(" ")) {
-                System.out.println(" ");
-                System.out.println("[ ][ ][X]");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][ ][ ]");
+    if (choix == 3) {
+        if (c3.equals(" ")) {
 
-                c3 = "X";
-            }
+            c3 = "X";
+            intc3 = 1;
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
-        if (choix == 4) {
-            if (c4 ==(" ")) {
-                System.out.println(" ");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[X][ ][ ]");
-                System.out.println("[ ][ ][ ]");
+    if (choix == 4) {
+        if (c4.equals(" ")) {
 
-                c4 = "X";
-            }
+            c4 = "X";
+            intc4 = 1;
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
-        if (choix == 5) {
-            if (c5 ==(" ")) {
-                System.out.println(" ");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][X][ ]");
-                System.out.println("[ ][ ][ ]");
+    if (choix == 5) {
+        if (c5.equals(" ")) {
 
-                c5 = "X";
-            }
+            c5 = "X";
+            intc5 = 1;
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
-        if (choix == 6) {
-            if (c6 ==(" ")) {
-                System.out.println(" ");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][ ][X]");
-                System.out.println("[ ][ ][ ]");
+    if (choix == 6) {
+        if (c6.equals(" ")) {
 
-                c6 = "X";
-            }
+            c6 = "X";
+            intc6 = 1;
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
-        if (choix == 7) {
-            if (c7 ==(" ")) {
-                System.out.println(" ");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[X][ ][ ]");
+    if (choix == 7) {
+        if (c7.equals(" ")) {
 
-                c7 = "X";
-            }
+            c7 = "X";
+            intc7 = 1;
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
-        if (choix == 8) {
-            if (c8 ==(" ")) {
-                System.out.println(" ");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][X][ ]");
+    if (choix == 8) {
+        if (c8.equals(" ")) {
 
-                c8 = "X";
-            }
+            c8 = "X";
+            intc8 = 1;
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
-        if (choix == 9) {
-            if (c9 ==(" ")) {
-                System.out.println(" ");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][ ][ ]");
-                System.out.println("[ ][ ][X]");
+    if (choix == 9) {
+        if (c9.equals(" ")) {
 
-                c9 = "X";
-            }
+            c9 = "X";
+            intc9 = 1;
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
         }
+    }
 
     choix = 0;
-        System.out.println("test243");
 
+
+
+        /* Deuxième Joueur */
+
+    System.out.println("Second Joueur :");
+
+    Scanner scaner = new Scanner(System.in);
+    choix2 = scanner.nextInt();
+
+    if (choix2 == 1) {
+        if (c1.equals(" ")) {
+
+            c1 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    if (choix2 == 2) {
+        if (c2.equals(" ")) {
+
+            c2 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    if (choix2 == 3) {
+        if (c3.equals(" ")) {
+
+            c3 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    if (choix2 == 4) {
+        if (c4.equals(" ")) {
+
+            c4 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    if (choix2 == 5) {
+        if (c5.equals(" ")) {
+
+            c5 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    if (choix2 == 6) {
+        if (c6.equals(" ")) {
+
+            c6 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    if (choix2 == 7) {
+        if (c7.equals(" ")) {
+
+            c7 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    if (choix2 == 8) {
+        if (c8.equals(" ")) {
+
+            c8 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    if (choix2 == 9) {
+        if (c9.equals(" ")) {
+
+            c9 = "O";
+
+            System.out.println(" ");
+
+            System.out.println("[" + c1 + "][" + c2 + "][" + c3 + "]");
+            System.out.println("[" + c4 + "][" + c5 + "][" + c6 + "]");
+            System.out.println("[" + c7 + "][" + c8 + "][" + c9 + "]");
+        }
+    }
+
+    choix2 = 0;
+
+}
+
+System.out.println(" ");
+System.out.println("-------------------");
+System.out.println("END");
 
     }
 }
