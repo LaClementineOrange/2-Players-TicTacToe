@@ -32,6 +32,8 @@ import java.util.Scanner;
         int intc8 = 0;
         int intc9 = 0;
 
+        //Création de la variable pour limiter le nombre de tours
+        int ntour = 0;
 
 
         //Grille de départ
@@ -41,8 +43,9 @@ import java.util.Scanner;
 
         System.out.println(" ");
 
-while (intc1 != 0 && intc2 !=0 ) {
+while (ntour < 10) {
 
+    System.out.println(" ");
     System.out.println("Premier Joueur :");
 
     Scanner scanner = new Scanner(System.in);
@@ -175,10 +178,42 @@ while (intc1 != 0 && intc2 !=0 ) {
 
     choix = 0;
 
+        //Conditions de victoire Joueur 1
+
+    //Horizontal
+    if (intc1 == 1 && intc2 == 1 && intc3 == 1){
+    break;
+    }
+    if (intc4 == 1 && intc5 == 1 && intc6 == 1){
+        break;
+    }
+    if (intc7 == 1 && intc8 == 1 && intc9 == 1){
+        break;
+    }
+
+    //Vertical
+    if (intc1 == 1 && intc4 == 1 && intc7 == 1){
+        break;
+    }
+    if (intc2 == 1 && intc5 == 1 && intc8 == 1){
+        break;
+    }
+    if (intc3 == 1 && intc6 == 1 && intc9 == 1){
+        break;
+    }
+
+    //Diagonal
+    if (intc1 == 1 && intc5 == 1 && intc9 == 1){
+        break;
+    }
+    if (intc3 == 1 && intc5 == 1 && intc7 == 1){
+        break;
+    }
 
 
         /* Deuxième Joueur */
 
+    System.out.println(" ");
     System.out.println("Second Joueur :");
 
     Scanner scaner = new Scanner(System.in);
@@ -188,6 +223,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c1.equals(" ")) {
 
             c1 = "O";
+            intc1 = 2;
 
             System.out.println(" ");
 
@@ -201,6 +237,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c2.equals(" ")) {
 
             c2 = "O";
+            intc2 = 2;
 
             System.out.println(" ");
 
@@ -214,6 +251,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c3.equals(" ")) {
 
             c3 = "O";
+            intc3 = 2;
 
             System.out.println(" ");
 
@@ -227,6 +265,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c4.equals(" ")) {
 
             c4 = "O";
+            intc4 = 2;
 
             System.out.println(" ");
 
@@ -240,6 +279,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c5.equals(" ")) {
 
             c5 = "O";
+            intc5 = 2;
 
             System.out.println(" ");
 
@@ -253,6 +293,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c6.equals(" ")) {
 
             c6 = "O";
+            intc6 = 2;
 
             System.out.println(" ");
 
@@ -266,6 +307,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c7.equals(" ")) {
 
             c7 = "O";
+            intc7 = 2;
 
             System.out.println(" ");
 
@@ -279,6 +321,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c8.equals(" ")) {
 
             c8 = "O";
+            intc8 = 2;
 
             System.out.println(" ");
 
@@ -292,6 +335,7 @@ while (intc1 != 0 && intc2 !=0 ) {
         if (c9.equals(" ")) {
 
             c9 = "O";
+            intc9 = 2;
 
             System.out.println(" ");
 
@@ -303,11 +347,49 @@ while (intc1 != 0 && intc2 !=0 ) {
 
     choix2 = 0;
 
+    //Ajoute un tour
+    ntour++;
+
+        //Conditions de victoire Joueur 2
+
+    //Horizontal
+    if (intc1 == 2 && intc2 == 2 && intc3 == 2){
+        break;
+    }
+    if (intc4 == 2 && intc5 == 2 && intc6 == 2){
+        break;
+    }
+    if (intc7 == 2 && intc8 == 2 && intc9 == 2){
+        break;
+    }
+
+    //Vertical
+    if (intc1 == 2 && intc4 == 2 && intc7 == 2){
+        break;
+    }
+    if (intc2 == 2 && intc5 == 2 && intc8 == 2){
+        break;
+    }
+    if (intc3 == 2 && intc6 == 2 && intc9 == 2){
+        break;
+    }
+
+    //Diagonal
+    if (intc1 == 2 && intc5 == 2 && intc9 == 2){
+        break;
+    }
+    if (intc3 == 2 && intc5 == 2 && intc7 == 2){
+        break;
+
+    }
 }
 
 System.out.println(" ");
-System.out.println("-------------------");
-System.out.println("END");
+System.out.println("---------------------------------------------------------");
+System.out.println(" ");
+System.out.println("                  Partie Terminée !!!");
+System.out.println(" ");
+System.out.println("---------------------------------------------------------");
 
     }
 }
