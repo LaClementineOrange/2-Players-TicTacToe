@@ -127,6 +127,7 @@ public class Main {
         }
 
     choix = 0;
+        System.out.println(test);
 
 
     }
