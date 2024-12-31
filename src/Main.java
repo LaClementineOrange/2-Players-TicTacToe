@@ -226,9 +226,9 @@ while (ntour < 9999) {
     }
 
     //Ajoute un tour
-    ntour=ntour+5;
+    ntour++;
 
-    if (ntour==45){break;}
+    if (ntour==9){break;}
 
         /* Deuxième Joueur */
 
@@ -367,7 +367,7 @@ while (ntour < 9999) {
     choix2 = 0;
 
     //Ajoute un tour
-    ntour = ntour+5;
+    ntour++;
 
 
         //Conditions de victoire Joueur 2
