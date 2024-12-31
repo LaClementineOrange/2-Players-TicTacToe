@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
+    private static boolean test;
+
     public static void main(String[] args) {
 
         String c1 = " ";
@@ -127,7 +129,7 @@ public class Main {
         }
 
     choix = 0;
-        System.out.println(test);
+        System.out.println("test");
 
 
     }
