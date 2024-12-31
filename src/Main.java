@@ -18,8 +18,8 @@ import java.util.Scanner;
         String c9 = " ";
 
         //Création des variables de choix
-        int choix = 0;
-        int choix2 = 0;
+        int choix;
+        int choix2;
 
         //Création des variables de tests de fin
         int intc1 = 0;
@@ -38,6 +38,7 @@ import java.util.Scanner;
         //Création de la variable pour identifier le gagnant
         int win = 0;
 
+        System.out.println(" ");
 
         //Grille de départ
         System.out.println("[1][2][3]");
@@ -52,7 +53,7 @@ while (ntour < 10) {
         /*Premier Joueur*/
 
     System.out.println(" ");
-    System.out.println("Premier Joueur :");
+    System.out.println("Au tour du Premier Joueur :");
 
     Scanner scanner = new Scanner(System.in);
     choix = scanner.nextInt();
@@ -186,7 +187,7 @@ while (ntour < 10) {
 
         //Conditions de victoire Joueur 1
 
-    //Horizontal
+    //Horizontal1
     if (intc1 == 1 && intc2 == 1 && intc3 == 1){
         win = 1;
         break;
@@ -228,7 +229,7 @@ while (ntour < 10) {
         /* Deuxième Joueur */
 
     System.out.println(" ");
-    System.out.println("Second Joueur :");
+    System.out.println("Au tour du Second Joueur :");
 
     Scanner scaner = new Scanner(System.in);
     choix2 = scanner.nextInt();
@@ -410,7 +411,7 @@ while (ntour < 10) {
 
         System.out.println(" ");
         System.out.println("---------------------------------------------------------");
-        System.out.println(" ");
+        System.out.println("                                                         ");
         System.out.println("                  Partie Terminée !!!");
 
         if(win==0) {
@@ -425,11 +426,9 @@ while (ntour < 10) {
         System.out.println("                    Player 2 Win !");
         }
 
-
-
-
-System.out.println(" ");
-System.out.println("---------------------------------------------------------");
+        System.out.println("                                                         ");
+        System.out.println("---------------------------------------------------------");
+        System.out.println("   > Created by Al.exe");
 
     }
 }
