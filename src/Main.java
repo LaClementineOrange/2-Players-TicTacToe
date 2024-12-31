@@ -48,7 +48,7 @@ import java.util.Scanner;
         System.out.println(" ");
 
 //Morpion - Boucle + Test pour le nombre de tours
-while (ntour < 999) {
+while (ntour < 9999) {
 
         /*Premier Joueur*/
 
