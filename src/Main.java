@@ -35,6 +35,9 @@ import java.util.Scanner;
         //Création de la variable pour limiter le nombre de tours
         int ntour = 0;
 
+        //Création de la variable pour identifier le gagnant
+        int win = 0;
+
 
         //Grille de départ
         System.out.println("[1][2][3]");
@@ -43,7 +46,10 @@ import java.util.Scanner;
 
         System.out.println(" ");
 
+//Morpion - Boucle + Test pour le nombre de tours
 while (ntour < 10) {
+
+        /*Premier Joueur*/
 
     System.out.println(" ");
     System.out.println("Premier Joueur :");
@@ -182,31 +188,39 @@ while (ntour < 10) {
 
     //Horizontal
     if (intc1 == 1 && intc2 == 1 && intc3 == 1){
-    break;
+        win = 1;
+        break;
     }
     if (intc4 == 1 && intc5 == 1 && intc6 == 1){
+        win = 1;
         break;
     }
     if (intc7 == 1 && intc8 == 1 && intc9 == 1){
+        win = 1;
         break;
     }
 
     //Vertical
     if (intc1 == 1 && intc4 == 1 && intc7 == 1){
+        win = 1;
         break;
     }
     if (intc2 == 1 && intc5 == 1 && intc8 == 1){
+        win = 1;
         break;
     }
     if (intc3 == 1 && intc6 == 1 && intc9 == 1){
+        win = 1;
         break;
     }
 
     //Diagonal
     if (intc1 == 1 && intc5 == 1 && intc9 == 1){
+        win = 1;
         break;
     }
     if (intc3 == 1 && intc5 == 1 && intc7 == 1){
+        win = 1;
         break;
     }
 
@@ -354,40 +368,66 @@ while (ntour < 10) {
 
     //Horizontal
     if (intc1 == 2 && intc2 == 2 && intc3 == 2){
+        win = 2;
         break;
     }
     if (intc4 == 2 && intc5 == 2 && intc6 == 2){
+        win = 2;
         break;
     }
     if (intc7 == 2 && intc8 == 2 && intc9 == 2){
+        win = 2;
         break;
     }
 
     //Vertical
     if (intc1 == 2 && intc4 == 2 && intc7 == 2){
+        win = 2;
         break;
     }
     if (intc2 == 2 && intc5 == 2 && intc8 == 2){
+        win = 2;
         break;
     }
     if (intc3 == 2 && intc6 == 2 && intc9 == 2){
+        win = 2;
         break;
     }
 
     //Diagonal
     if (intc1 == 2 && intc5 == 2 && intc9 == 2){
+        win = 2;
         break;
     }
     if (intc3 == 2 && intc5 == 2 && intc7 == 2){
+        win = 2;
         break;
 
     }
 }
 
-System.out.println(" ");
-System.out.println("---------------------------------------------------------");
-System.out.println(" ");
-System.out.println("                  Partie Terminée !!!");
+//Message de Fin
+
+        System.out.println(" ");
+        System.out.println("---------------------------------------------------------");
+        System.out.println(" ");
+        System.out.println("                  Partie Terminée !!!");
+
+        if(win==0) {
+        System.out.println("                       Egalité !");
+        }
+
+        if(win==1) {
+        System.out.println("                    Player 1 Win !");
+        }
+
+        if(win==2) {
+        System.out.println("                    Player 2 Win !");
+        }
+
+
+
+
 System.out.println(" ");
 System.out.println("---------------------------------------------------------");
 
